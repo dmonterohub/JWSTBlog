@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <html lang="en">
+        <meta charset="UTF-8">
+        <title>JWST Fanpage</title>
+        <link id="csslink" rel="stylesheet" href="main.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Photos from the James Webb Space Telescope</h1>
+            <nav aria-label="Navigation Menu">
+                <ul>
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    <li><a href="secondpage.html">Top Five Photos</a></li>
+                    <li><a href="wordSearch.html">Word Search Puzzle</a></li>
+                    <button onclick="toggleCSS()">Vibe Check</button>
+                    <script>
+                        function toggleCSS() {
+                          // Obtains the <link> element that links to the css (by using its id).
+                          var currentCSS = document.getElementById('csslink');
+                
+                          // Change the value of href attribute to change the css file.
+                          if (currentCSS.getAttribute('href') == 'main.css') {
+                            currentCSS.setAttribute('href', 'alternate.css');
+                          } else {
+                            currentCSS.setAttribute('href', 'main.css');
+                          }
+                      }
+                  </script>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h1>Featured JWST Image</h1>
+            <article>
+                <p id="section-one">
+                    Welcome to the JWST Fanpage! <br>
+                    My goal for this website is to show off a selection of handpicked pictures <br>
+                    from the James Webb Space Telescope and get more eyes on it. <br>
+                    This front page shows off a recent image from the telescope <br>
+                    that I found to be very interesting.
+                </p>
+
+
+            </article>
+
+            <h2>JuMBOs = "Jupiter Mass Binary Objects"</h2>
+            <article class="flex-container">
+                <p id="featured-text">
+                    Our current featured image showcases a potentially new astronomical phenomena! <br>
+                    Within the new images taken of the Orion nebula,
+                    it is possible to find Jupiter sized binary objects that are currently interstellar. <br>
+                    This new phenomenon has scientists and astronomers scratching their heads. <br>
+                    <br>
+                    JuMBOs are fascinating because as previously described, they are apparently interstellar objects. <br>
+                    What does "interstellar" mean in this context? 
+                    It means that they are rogue planets that are not tied to a star like the planets within our solar system. <br>
+                    The reason that this is fascinating is due to the fact that scientists only believed this was possible with a single planet. <br>
+                    Not binary planets! Not to mention these binary planets are ALSO around the size of Jupiter. <br>
+                    <br>
+                    This image located on the right is showcased in the new scientific article by Samuel G. Pearson & Mark J. McCaughrean. <br>
+                    Check out the link below in the footer and click on the second paper, that one talks about JuMBOs.
+                </p>
+                <img class="featured-image" src="Images/JuMBOs.png" alt="Image showcasing Jupiter Mass Binary Objects">
+            </article>
+        </main>
+
+        <footer>
+            <p>
+                © JWST Fanpage, Daniel Montero<br>
+                Images from NASA/ESA/CSA/McCaughrean & Pearson <br>
+                McCaughrean article about <a href="https://markmccaughrean.net/science" target="_blank">JuMBOs</a> <br>
+                Check out more JWST images at <a href="https://science.nasa.gov/mission/webb/" target="_blank">NASA</a>
+            </p>
+        </footer>
+    </body>
+
+</html>

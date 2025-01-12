@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+      <html lang="en">
+      <meta charset="UTF-8">
+      <title>JWST Fanpage</title>
+      <link id="csslink" rel="stylesheet" href="wordsearch.css">
+      <!-- <link id="csslink" rel="stylesheet" href="wordsearch.css"> -->
+      <script src="makeTable.js" async></script>
+      <script src="wordSearch.js" async></script> 
+   </head>
+  
+   <body>
+      <header>
+         <h1>Photos from the James Webb Space Telescope</h1>
+         <nav aria-label="Navigation Menu">
+            <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="secondpage.html">Top Five Photos</a></li>
+               <li><a href="wordSearch.html" aria-current="page">Word Search Puzzle</a></li>
+               <!-- <button onclick="toggleCSS()">Vibe Check</button>
+               <script>
+                  function toggleCSS() {
+                     // Obtains the <link> element that links to the css (by using its id).
+                     var currentCSS = document.getElementById('csslink');
+                  
+                     // Change the value of href attribute to change the css file.
+                     if (currentCSS.getAttribute('href') == 'main.css') {
+                        currentCSS.setAttribute('href', 'alternate.css');
+                     } else {
+                        currentCSS.setAttribute('href', 'main.css');
+                     }
+                  }
+               </script> -->
+            </ul>
+         </nav>
+      </header>
+
+      <main>
+         <section id="main">
+            <article>
+               <figure id="wordTable"></figure>
+               <input type="button" value="Show Solution" id="showSolution" />
+            </article>
+            <aside>
+               <h1 id="wordSearchTitle"></h1>
+               <input type="text" id="pickedLetters" readonly />
+               <figure id="wordList"></figure>
+            </aside>
+            </section>
+      </main>
+   </body>
+</html>
+
+<!-- <html lang="en">
+<head>
+    
+    Word Search Page
+   
+   <title>Word Search</title>
+   <meta charset="utf-8" />
+   <link href="layout.css" rel="stylesheet"  />
+   <script src="makeTable.js" async></script>
+   <script src="wordSearch.js" async></script>  
+
+</head>
+
+<body> -->

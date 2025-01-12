@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <html lang="en">
+        <meta charset="UTF-8">
+        <title>JWST Fanpage</title>
+        <link id="csslink" rel="stylesheet" href="main.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Photos from the James Webb Space Telescope</h1>
+            <nav aria-label="Navigation Menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="secondpage.html" aria-current="page">Top Five Photos</a></li>
+                    <li><a href="wordSearch.html">Word Search Puzzle</a></li>
+                    <button onclick="toggleCSS()">Vibe Check</button>
+                    <script>
+                        function toggleCSS() {
+                          // Obtains the <link> element that links to the css (by using its id).
+                          var currentCSS = document.getElementById('csslink');
+                
+                          // Change the value of href attribute to change the css file.
+                          if (currentCSS.getAttribute('href') == 'main.css') {
+                            currentCSS.setAttribute('href', 'alternate.css');
+                          } else {
+                            currentCSS.setAttribute('href', 'main.css');
+                          }
+                      }
+                  </script>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h1>Top Five JWST Photos</h1>
+            <article>
+                <p id="section-one">
+                    Here are my personal top five photos <br>
+                    that we have seen so far from the James Webb Space Telescope <br>
+                    (as of October 4th, 2023).
+                </p>
+            </article>
+
+            <h2>Number 5</h2>
+            <article>
+                <p class="top-five">
+                    HH211
+                </p>
+                <img class="ranked-images" src="Images/HH211.jpg" alt="Image of Herbig Haro 211 outflow of a young star.">
+            </article>
+
+            <h2>Number 4</h2>
+            <article>
+                <p class="top-five">
+                    Orion Nebula
+                </p>
+                <img class="ranked-images" src="Images/Orion Nebula.png" alt="Short wavelength image of the Orion Nebula">
+            </article>
+
+            <h2>Number 3</h2>
+            <article>
+                <p class="top-five">
+                    Carina Nebula
+                </p>
+                <img class="ranked-images" src="Images/Carina.png" alt="One of the First JWST Images showcasing the Carina Nebula">
+            </article>
+
+            <h2>Number 2</h2>
+            <article>
+                <p class="top-five">
+                    SMACS 0723
+                </p>
+                <img class="ranked-images" src="Images/SMACS 0723.png" alt="Image showcasing SMACS 0723 and gravitational lensing">
+            </article>
+
+            <h2>Number 1</h2>
+            <article>
+                <p class="top-five">
+                    Pillars of Creation
+                </p>
+                <img class="ranked-images" src="Images/Pillars of Creation.png" alt="Image of the Pillars of Creation from JWST">
+            </article>
+        </main>
+
+        <footer>
+            <p>
+                © JWST Fanpage, Daniel Montero<br>
+                Images from NASA/ESA/CSA/McCaughrean & Pearson <br>
+                McCaughrean article about <a href="https://markmccaughrean.net/science" target="_blank">JuMBOs</a> <br>
+                Check out more JWST images at <a href="https://science.nasa.gov/mission/webb/" target="_blank">NASA</a>
+            </p>
+        </footer>
+    </body>
+</html>
